@@ -1,0 +1,264 @@
+body {
+  margin: 0px 0px 30px 0px;
+  box-sizing: border-box; }
+
+body #cabecera {
+  text-align: center;
+  background-color: #024202;
+  padding: 0.5em;
+  color: orange;
+  font-weight: bolder;
+  font-size: large; }
+
+body #todo-tiendas {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  align-items: center; }
+
+body #administrar-tiendas {
+  display: flex;
+  justify-content: space-between;
+  width: 67em; }
+
+body #administrar-tiendas #nueva-tienda {
+  font-size: large;
+  color: #024202;
+  font-weight: bold;
+  cursor: pointer; }
+
+body #administrar-tiendas #contenido-buscador {
+  display: flex; }
+
+body #administrar-tiendas #contenido-buscador #texto-buscador {
+  border-radius: 5px;
+  transition: 0.3s;
+  outline: none;
+  padding: 0.5em; }
+
+body #administrar-tiendas #contenido-buscador #texto-buscador:active {
+  -webkit-box-shadow: 0px 0px 2px 3px rgba(23, 173, 220, 0.6);
+  box-shadow: 0px 0px 2px 3px rgba(23, 173, 220, 0.6); }
+
+body #administrar-tiendas #contenido-buscador #texto-buscador:focus {
+  -webkit-box-shadow: 0px 0px 2px 3px rgba(23, 173, 220, 0.6);
+  box-shadow: 0px 0px 2px 3px rgba(23, 173, 220, 0.6); }
+
+body #administrar-tiendas #contenido-buscador #buscador {
+  max-height: 3em;
+  background-color: white;
+  border-radius: 5px;
+  border-color: green;
+  margin-left: 5px;
+  transition: 0.3s;
+  outline: none; }
+
+body #administrar-tiendas #contenido-buscador #buscador #lupa {
+  color: green;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-style: normal; }
+
+body #administrar-tiendas #contenido-buscador #buscador:hover {
+  background-color: green;
+  border-color: green; }
+
+body #administrar-tiendas #contenido-buscador #buscador:hover #lupa {
+  color: white; }
+
+body #administrar-tiendas #contenido-buscador #buscador:active {
+  background-color: white;
+  border-color: green;
+  outline: rgba(2, 121, 2, 0.493);
+  -webkit-box-shadow: 0px 0px 2px 3px rgba(0, 128, 0, 0.658);
+  box-shadow: 0px 0px 2px 3px rgba(0, 128, 0, 0.658); }
+
+body #administrar-tiendas #contenido-buscador #buscador:active #lupa {
+  color: green; }
+
+body #administrar-tiendas #contenido-buscador #buscador:focus {
+  background-color: white;
+  border-color: green;
+  outline: rgba(2, 121, 2, 0.493);
+  -webkit-box-shadow: 0px 0px 2px 3px rgba(0, 128, 0, 0.658);
+  box-shadow: 0px 0px 2px 3px rgba(0, 128, 0, 0.658);
+  transition: 0.3s; }
+
+body #administrar-tiendas #contenido-buscador #buscador:focus #lupa {
+  color: green; }
+
+body #contenido-formulario {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  border: 1px solid green;
+  width: 65em;
+  padding: 0.75em;
+  border-radius: 5px;
+  margin-top: 0.75em;
+  overflow: hidden; }
+
+body #contenido-formulario h1 {
+  color: green;
+  font-size: xx-large;
+  margin: 0;
+  margin-bottom: 0.5em; }
+
+body #contenido-formulario div {
+  flex-wrap: wrap; }
+
+body #contenido-formulario div label {
+  display: block; }
+
+body #contenido-formulario div input {
+  width: 37.5em;
+  display: block;
+  border-radius: 5px; }
+
+body #contenido-formulario div .input-formulario {
+  float: left;
+  margin-right: 10px; }
+
+body #contenido-formulario div .down {
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+body #contenido-formulario div #contenedor-aniadir-tienda {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end; }
+
+body #contenido-formulario div #contenedor-aniadir-tienda #aniadir-tienda {
+  margin-right: 1em;
+  margin-bottom: 10px;
+  border-color: green;
+  color: green;
+  border-radius: 5px;
+  background-color: palegreen;
+  font-weight: bold;
+  outline: none;
+  padding: 0.25em; }
+
+body #contenido-tiendas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+body #contenido-tiendas div {
+  background-color: white;
+  border: 1px solid green;
+  width: 65em;
+  padding: 0.75em;
+  border-radius: 5px;
+  margin-top: 0.75em;
+  -webkit-box-shadow: 0px 1px 5px 0px #024202;
+  box-shadow: 0px 1px 5px 0px #024202; }
+
+body #contenido-tiendas div h1 {
+  color: #024202;
+  font-size: xx-large;
+  margin: 0; }
+
+body #contenido-tiendas #errorTienda {
+  color: #024202;
+  font-size: 2.5em; }
+
+#eleccion-consulta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 35em;
+  height: 100%; }
+
+#eleccion-consulta h1 {
+  color: #024202;
+  font-weight: bold;
+  font-size: 2em; }
+
+#eleccion-consulta button {
+  margin-top: 10px;
+  width: 16em;
+  height: 1.75em;
+  border-color: green;
+  color: #024202;
+  border-radius: 5px;
+  background-color: palegreen;
+  font-size: 1em;
+  outline: 0; }
+
+#eleccion-consulta button:hover {
+  background-color: rgba(52, 173, 52, 0.541); }
+
+#eleccion-consulta button:active {
+  background-color: rgba(0, 128, 0, 0.747);
+  color: white; }
+
+#eleccion-consulta button:focus {
+  background-color: rgba(0, 128, 0, 0.747);
+  color: white; }
+
+.error-borde,
+.error-borde:active,
+.error-borde:focus {
+  border-color: red !important;
+  outline: red; }
+
+.acierto,
+.acierto:active,
+.acierto:focus {
+  border-color: green;
+  outline: green; }
+
+#error {
+  color: red;
+  font-size: 0.85em !important;
+  height: 0.1em; }
+
+.open {
+  display: flex;
+  animation-name: openUp;
+  animation-duration: 1s; }
+
+.close {
+  animation-name: close;
+  animation-duration: 1s; }
+
+.close.hide {
+  display: none; }
+
+#imagen-loader {
+  animation: loader 1s linear infinite;
+  width: 5em;
+  height: 5em; }
+
+.fa.fa-refresh {
+  animation: loaderBoton 1s linear infinite;
+  width: 1em !important;
+  height: 1em !important; }
+
+@keyframes openUp {
+  from {
+    height: 0; }
+  to {
+    height: 14em; } }
+
+@keyframes close {
+  from {
+    height: 14em; }
+  to {
+    height: 0; } }
+
+@keyframes loader {
+  0% {
+    transform: translate(0%, 50%) rotate(0deg); }
+  100% {
+    transform: translate(0%, 50%) rotate(360deg); } }
+
+@keyframes loaderBoton {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tiendas</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="module" src="./js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body id="cuerpo">
+    <header id="cabecera">
+      <h1>Tiendas</h1>
+    </header>
+    <section id="eleccion-consulta">
+      <h1>Elige el método para realizar AJAX:</h1>
+      <button id="boton-filtro-XHR" value="XHR">XHR</button>
+      <button id="boton-filtro-Fetch" value="Fetch">Fetch</button>
+      <button id="boton-filtro-JQuery" value="JQuery">JQuery</button>
+    </section>
+  </body>
+
+  <template id="template-body">
+    <header id="cabecera">
+      <h1>Tiendas</h1>
+    </header>
+    <section id="todo-tiendas">
+      <section id="administrar-tiendas">
+        <a id="nueva-tienda">Nueva tienda</a>
+        <div id="contenido-buscador">
+          <input type="search" id="texto-buscador" placeholder="ID de Tienda" />
+          <button id="buscador">
+            <i class="fa fa-search" id="lupa"></i>
+          </button>
+        </div>
+      </section>
+      <div id="formulario"></div>
+      <section id="contenido-tiendas"></section>
+    </section>
+
+    <template id="template-formulario">
+      <div id="contenido-formulario">
+        <h1>Nueva Empresa</h1>
+        <div>
+          <div class="input-formulario">
+            <label for="nombre-empresa">Nombre</label>
+            <input
+              type="text"
+              id="nombre-empresa"
+              placeholder="Nombre de la empresa"
+              required
+            />
+            <div id="error"></div>
+          </div>
+          <div class="input-formulario">
+            <label for="direccion-empresa">Dirección</label>
+            <input
+              type="text"
+              id="direccion-empresa"
+              placeholder="Dirección de la empresa"
+              required
+            />
+            <div id="error"></div>
+          </div>
+          <div class="input-formulario down">
+            <label for="localidad-empresa">Localidad</label>
+            <input
+              type="text"
+              id="localidad-empresa"
+              placeholder="Localidad de la empresa"
+              required
+            />
+            <div id="error"></div>
+          </div>
+          <div class="input-formulario down">
+            <label for="telefono-empresa">Teléfono</label>
+            <input
+              type="text"
+              id="telefono-empresa"
+              placeholder="Teléfono de la empresa"
+              pattern="^(6|8|9)+[0-9]{8}"
+              required
+            />
+            <div id="error"></div>
+          </div>
+          <div id="contenedor-aniadir-tienda">
+            <button id="aniadir-tienda">Añadir Tienda</button>
+          </div>
+        </div>
+      </div>
+    </template>
+  </template>
+</html>
